@@ -1,0 +1,6 @@
+framework module Pods_TimeLineSample {
+  umbrella header "Pods-TimeLineSample-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,27 +7,97 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		729B2A57A2706ABE4B5A4D2F /* Pods_TimeLineSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9986A991CBCB2693B29993A6 /* Pods_TimeLineSample.framework */; };
+		E71EDB3C22F1EA7200AF5441 /* AddTimeLineUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71EDB3B22F1EA7200AF5441 /* AddTimeLineUseCase.swift */; };
+		E71EDB3E22F1EA8B00AF5441 /* AddTimeLineNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71EDB3D22F1EA8B00AF5441 /* AddTimeLineNavigator.swift */; };
+		E71EDB4022F1EAED00AF5441 /* AddTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71EDB3F22F1EAED00AF5441 /* AddTimelineController.swift */; };
+		E71EDB4222F1EB1800AF5441 /* AddTimelineController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E71EDB4122F1EB1800AF5441 /* AddTimelineController.xib */; };
+		E71EDB4522F2ED7A00AF5441 /* UINavigationController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71EDB4422F2ED7A00AF5441 /* UINavigationController+Rx.swift */; };
 		E7FBB7F622EDB9E10029ABE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FBB7F522EDB9E10029ABE4 /* AppDelegate.swift */; };
 		E7FBB7F822EDB9E10029ABE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FBB7F722EDB9E10029ABE4 /* ViewController.swift */; };
 		E7FBB7FB22EDB9E10029ABE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7FBB7F922EDB9E10029ABE4 /* Main.storyboard */; };
 		E7FBB7FE22EDB9E10029ABE4 /* TimeLineSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E7FBB7FC22EDB9E10029ABE4 /* TimeLineSample.xcdatamodeld */; };
-		E7FBB80022EDB9E50029ABE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7FBB7FF22EDB9E50029ABE4 /* Assets.xcassets */; };
 		E7FBB80322EDB9E50029ABE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7FBB80122EDB9E50029ABE4 /* LaunchScreen.storyboard */; };
+		E7FBB80B22EDBA210029ABE4 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FBB80A22EDBA210029ABE4 /* CollectionViewCell.swift */; };
+		E7FBB80D22EDBA380029ABE4 /* StackViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FBB80C22EDBA380029ABE4 /* StackViewCell.swift */; };
+		E7FBB81122EDBCFE0029ABE4 /* StackTimelineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FBB81022EDBCFE0029ABE4 /* StackTimelineController.swift */; };
+		E7FBB81322EDBD390029ABE4 /* CollectionTimeLineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FBB81222EDBD390029ABE4 /* CollectionTimeLineController.swift */; };
+		E7FBB81522EE3D700029ABE4 /* TimelineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FBB81422EE3D700029ABE4 /* TimelineViewModel.swift */; };
+		E7FBB81722EE3E910029ABE4 /* MediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FBB81622EE3E910029ABE4 /* MediaCell.swift */; };
+		E7FBB81A22EE46810029ABE4 /* ContentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FBB81922EE46810029ABE4 /* ContentService.swift */; };
+		E7FBB82122EEF1190029ABE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7FBB82022EEF1190029ABE4 /* Assets.xcassets */; };
+		E7FBB82922EF03B20029ABE4 /* TimeLineSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FBB82822EF03B20029ABE4 /* TimeLineSampleUITests.swift */; };
+		E7FBB83B22F084690029ABE4 /* CollectionTimeLineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FBB83A22F084690029ABE4 /* CollectionTimeLineViewModel.swift */; };
+		E7FBB83D22F0847A0029ABE4 /* CollectionTimeLineNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FBB83C22F0847A0029ABE4 /* CollectionTimeLineNavigator.swift */; };
+		E7FBB84022F084AA0029ABE4 /* CollectionTimeLineProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FBB83F22F084AA0029ABE4 /* CollectionTimeLineProtocol.swift */; };
+		E7FBB84222F084C10029ABE4 /* CollectionTimeLineUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FBB84122F084C10029ABE4 /* CollectionTimeLineUseCase.swift */; };
+		E7FBB84422F084EC0029ABE4 /* CollectionTimeLineController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7FBB84322F084EC0029ABE4 /* CollectionTimeLineController.xib */; };
+		E7FBB84722F089630029ABE4 /* BaseProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FBB84622F089630029ABE4 /* BaseProtocols.swift */; };
+		E7FBB84922F08A3C0029ABE4 /* BaseNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FBB84822F08A3C0029ABE4 /* BaseNavigator.swift */; };
+		E7FBB84B22F08C330029ABE4 /* StartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FBB84A22F08C330029ABE4 /* StartController.swift */; };
+		E7FBB84E22F095430029ABE4 /* AddTimelineProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FBB84D22F095430029ABE4 /* AddTimelineProtocol.swift */; };
+		E7FBB85022F09ADA0029ABE4 /* AddTimelineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FBB84F22F09ADA0029ABE4 /* AddTimelineViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E7FBB82B22EF03B20029ABE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7FBB7EA22EDB9E10029ABE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7FBB7F122EDB9E10029ABE4;
+			remoteInfo = TimeLineSample;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		6826667A8073BD111EB322A8 /* Pods-TimeLineSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeLineSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimeLineSample/Pods-TimeLineSample.release.xcconfig"; sourceTree = "<group>"; };
+		985A4A10C9F639C90D98ADB5 /* Pods-TimeLineSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeLineSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeLineSample/Pods-TimeLineSample.debug.xcconfig"; sourceTree = "<group>"; };
+		9986A991CBCB2693B29993A6 /* Pods_TimeLineSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeLineSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E71EDB3B22F1EA7200AF5441 /* AddTimeLineUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimeLineUseCase.swift; sourceTree = "<group>"; };
+		E71EDB3D22F1EA8B00AF5441 /* AddTimeLineNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimeLineNavigator.swift; sourceTree = "<group>"; };
+		E71EDB3F22F1EAED00AF5441 /* AddTimelineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimelineController.swift; sourceTree = "<group>"; };
+		E71EDB4122F1EB1800AF5441 /* AddTimelineController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTimelineController.xib; sourceTree = "<group>"; };
+		E71EDB4422F2ED7A00AF5441 /* UINavigationController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Rx.swift"; sourceTree = "<group>"; };
 		E7FBB7F222EDB9E10029ABE4 /* TimeLineSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeLineSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7FBB7F522EDB9E10029ABE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7FBB7F722EDB9E10029ABE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E7FBB7FA22EDB9E10029ABE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7FBB7FD22EDB9E10029ABE4 /* TimeLineSample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TimeLineSample.xcdatamodel; sourceTree = "<group>"; };
-		E7FBB7FF22EDB9E50029ABE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7FBB80222EDB9E50029ABE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7FBB80422EDB9E50029ABE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7FBB80A22EDBA210029ABE4 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		E7FBB80C22EDBA380029ABE4 /* StackViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewCell.swift; sourceTree = "<group>"; };
+		E7FBB81022EDBCFE0029ABE4 /* StackTimelineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackTimelineController.swift; sourceTree = "<group>"; };
+		E7FBB81222EDBD390029ABE4 /* CollectionTimeLineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTimeLineController.swift; sourceTree = "<group>"; };
+		E7FBB81422EE3D700029ABE4 /* TimelineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewModel.swift; sourceTree = "<group>"; };
+		E7FBB81622EE3E910029ABE4 /* MediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCell.swift; sourceTree = "<group>"; };
+		E7FBB81922EE46810029ABE4 /* ContentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentService.swift; sourceTree = "<group>"; };
+		E7FBB82022EEF1190029ABE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7FBB82622EF03B20029ABE4 /* TimeLineSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeLineSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7FBB82822EF03B20029ABE4 /* TimeLineSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineSampleUITests.swift; sourceTree = "<group>"; };
+		E7FBB82A22EF03B20029ABE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7FBB83A22F084690029ABE4 /* CollectionTimeLineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTimeLineViewModel.swift; sourceTree = "<group>"; };
+		E7FBB83C22F0847A0029ABE4 /* CollectionTimeLineNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTimeLineNavigator.swift; sourceTree = "<group>"; };
+		E7FBB83F22F084AA0029ABE4 /* CollectionTimeLineProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTimeLineProtocol.swift; sourceTree = "<group>"; };
+		E7FBB84122F084C10029ABE4 /* CollectionTimeLineUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTimeLineUseCase.swift; sourceTree = "<group>"; };
+		E7FBB84322F084EC0029ABE4 /* CollectionTimeLineController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionTimeLineController.xib; sourceTree = "<group>"; };
+		E7FBB84622F089630029ABE4 /* BaseProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProtocols.swift; sourceTree = "<group>"; };
+		E7FBB84822F08A3C0029ABE4 /* BaseNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigator.swift; sourceTree = "<group>"; };
+		E7FBB84A22F08C330029ABE4 /* StartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartController.swift; sourceTree = "<group>"; };
+		E7FBB84D22F095430029ABE4 /* AddTimelineProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimelineProtocol.swift; sourceTree = "<group>"; };
+		E7FBB84F22F09ADA0029ABE4 /* AddTimelineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTimelineViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E7FBB7EF22EDB9E10029ABE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				729B2A57A2706ABE4B5A4D2F /* Pods_TimeLineSample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7FBB82322EF03B20029ABE4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,11 +107,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98EC25BDB43256AEE0B41D34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9986A991CBCB2693B29993A6 /* Pods_TimeLineSample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE5E6CEE8C17D705A1C47850 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				985A4A10C9F639C90D98ADB5 /* Pods-TimeLineSample.debug.xcconfig */,
+				6826667A8073BD111EB322A8 /* Pods-TimeLineSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E71EDB4322F2ED6500AF5441 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E71EDB4422F2ED7A00AF5441 /* UINavigationController+Rx.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		E7FBB7E922EDB9E10029ABE4 = {
 			isa = PBXGroup;
 			children = (
 				E7FBB7F422EDB9E10029ABE4 /* TimeLineSample */,
+				E7FBB82722EF03B20029ABE4 /* TimeLineSampleUITests */,
 				E7FBB7F322EDB9E10029ABE4 /* Products */,
+				CE5E6CEE8C17D705A1C47850 /* Pods */,
+				98EC25BDB43256AEE0B41D34 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				E7FBB7F222EDB9E10029ABE4 /* TimeLineSample.app */,
+				E7FBB82622EF03B20029ABE4 /* TimeLineSampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +155,94 @@
 		E7FBB7F422EDB9E10029ABE4 /* TimeLineSample */ = {
 			isa = PBXGroup;
 			children = (
+				E71EDB4322F2ED6500AF5441 /* Extensions */,
+				E7FBB84522F0894B0029ABE4 /* Common */,
+				E7FBB81822EE46720029ABE4 /* Service */,
+				E7FBB81422EE3D700029ABE4 /* TimelineViewModel.swift */,
+				E7FBB80F22EDBC2C0029ABE4 /* Stack */,
+				E7FBB80E22EDBBF70029ABE4 /* Collection */,
 				E7FBB7F522EDB9E10029ABE4 /* AppDelegate.swift */,
 				E7FBB7F722EDB9E10029ABE4 /* ViewController.swift */,
 				E7FBB7F922EDB9E10029ABE4 /* Main.storyboard */,
-				E7FBB7FF22EDB9E50029ABE4 /* Assets.xcassets */,
 				E7FBB80122EDB9E50029ABE4 /* LaunchScreen.storyboard */,
 				E7FBB80422EDB9E50029ABE4 /* Info.plist */,
 				E7FBB7FC22EDB9E10029ABE4 /* TimeLineSample.xcdatamodeld */,
+				E7FBB82022EEF1190029ABE4 /* Assets.xcassets */,
+				E7FBB84A22F08C330029ABE4 /* StartController.swift */,
 			);
 			path = TimeLineSample;
+			sourceTree = "<group>";
+		};
+		E7FBB80E22EDBBF70029ABE4 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				E7FBB84C22F095260029ABE4 /* AddTimeline */,
+				E7FBB83E22F084850029ABE4 /* View */,
+				E7FBB83F22F084AA0029ABE4 /* CollectionTimeLineProtocol.swift */,
+				E7FBB83A22F084690029ABE4 /* CollectionTimeLineViewModel.swift */,
+				E7FBB83C22F0847A0029ABE4 /* CollectionTimeLineNavigator.swift */,
+				E7FBB84122F084C10029ABE4 /* CollectionTimeLineUseCase.swift */,
+				E7FBB81222EDBD390029ABE4 /* CollectionTimeLineController.swift */,
+				E7FBB84322F084EC0029ABE4 /* CollectionTimeLineController.xib */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		E7FBB80F22EDBC2C0029ABE4 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				E7FBB81022EDBCFE0029ABE4 /* StackTimelineController.swift */,
+				E7FBB80C22EDBA380029ABE4 /* StackViewCell.swift */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		E7FBB81822EE46720029ABE4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				E7FBB81922EE46810029ABE4 /* ContentService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E7FBB82722EF03B20029ABE4 /* TimeLineSampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E7FBB82822EF03B20029ABE4 /* TimeLineSampleUITests.swift */,
+				E7FBB82A22EF03B20029ABE4 /* Info.plist */,
+			);
+			path = TimeLineSampleUITests;
+			sourceTree = "<group>";
+		};
+		E7FBB83E22F084850029ABE4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7FBB80A22EDBA210029ABE4 /* CollectionViewCell.swift */,
+				E7FBB81622EE3E910029ABE4 /* MediaCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E7FBB84522F0894B0029ABE4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E7FBB84622F089630029ABE4 /* BaseProtocols.swift */,
+				E7FBB84822F08A3C0029ABE4 /* BaseNavigator.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E7FBB84C22F095260029ABE4 /* AddTimeline */ = {
+			isa = PBXGroup;
+			children = (
+				E7FBB84D22F095430029ABE4 /* AddTimelineProtocol.swift */,
+				E7FBB84F22F09ADA0029ABE4 /* AddTimelineViewModel.swift */,
+				E71EDB3B22F1EA7200AF5441 /* AddTimeLineUseCase.swift */,
+				E71EDB3D22F1EA8B00AF5441 /* AddTimeLineNavigator.swift */,
+				E71EDB3F22F1EAED00AF5441 /* AddTimelineController.swift */,
+				E71EDB4122F1EB1800AF5441 /* AddTimelineController.xib */,
+			);
+			path = AddTimeline;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +252,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7FBB80722EDB9E50029ABE4 /* Build configuration list for PBXNativeTarget "TimeLineSample" */;
 			buildPhases = (
+				964D185BAC89724EDD62FBED /* [CP] Check Pods Manifest.lock */,
 				E7FBB7EE22EDB9E10029ABE4 /* Sources */,
 				E7FBB7EF22EDB9E10029ABE4 /* Frameworks */,
 				E7FBB7F022EDB9E10029ABE4 /* Resources */,
+				7377F7DFD9F18B3B1D7B4370 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -86,6 +266,24 @@
 			productName = TimeLineSample;
 			productReference = E7FBB7F222EDB9E10029ABE4 /* TimeLineSample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E7FBB82522EF03B20029ABE4 /* TimeLineSampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7FBB82D22EF03B20029ABE4 /* Build configuration list for PBXNativeTarget "TimeLineSampleUITests" */;
+			buildPhases = (
+				E7FBB82222EF03B20029ABE4 /* Sources */,
+				E7FBB82322EF03B20029ABE4 /* Frameworks */,
+				E7FBB82422EF03B20029ABE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7FBB82C22EF03B20029ABE4 /* PBXTargetDependency */,
+			);
+			name = TimeLineSampleUITests;
+			productName = TimeLineSampleUITests;
+			productReference = E7FBB82622EF03B20029ABE4 /* TimeLineSampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +297,10 @@
 				TargetAttributes = {
 					E7FBB7F122EDB9E10029ABE4 = {
 						CreatedOnToolsVersion = 10.2.1;
+					};
+					E7FBB82522EF03B20029ABE4 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = E7FBB7F122EDB9E10029ABE4;
 					};
 				};
 			};
@@ -116,6 +318,7 @@
 			projectRoot = "";
 			targets = (
 				E7FBB7F122EDB9E10029ABE4 /* TimeLineSample */,
+				E7FBB82522EF03B20029ABE4 /* TimeLineSampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -125,13 +328,75 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7FBB84422F084EC0029ABE4 /* CollectionTimeLineController.xib in Resources */,
+				E71EDB4222F1EB1800AF5441 /* AddTimelineController.xib in Resources */,
 				E7FBB80322EDB9E50029ABE4 /* LaunchScreen.storyboard in Resources */,
-				E7FBB80022EDB9E50029ABE4 /* Assets.xcassets in Resources */,
+				E7FBB82122EEF1190029ABE4 /* Assets.xcassets in Resources */,
 				E7FBB7FB22EDB9E10029ABE4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E7FBB82422EF03B20029ABE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7377F7DFD9F18B3B1D7B4370 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TimeLineSample/Pods-TimeLineSample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRelay.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeLineSample/Pods-TimeLineSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		964D185BAC89724EDD62FBED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TimeLineSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E7FBB7EE22EDB9E10029ABE4 /* Sources */ = {
@@ -140,11 +405,47 @@
 			files = (
 				E7FBB7F822EDB9E10029ABE4 /* ViewController.swift in Sources */,
 				E7FBB7F622EDB9E10029ABE4 /* AppDelegate.swift in Sources */,
+				E7FBB80D22EDBA380029ABE4 /* StackViewCell.swift in Sources */,
+				E7FBB81122EDBCFE0029ABE4 /* StackTimelineController.swift in Sources */,
+				E7FBB84922F08A3C0029ABE4 /* BaseNavigator.swift in Sources */,
+				E7FBB81722EE3E910029ABE4 /* MediaCell.swift in Sources */,
+				E7FBB85022F09ADA0029ABE4 /* AddTimelineViewModel.swift in Sources */,
+				E7FBB80B22EDBA210029ABE4 /* CollectionViewCell.swift in Sources */,
+				E71EDB4522F2ED7A00AF5441 /* UINavigationController+Rx.swift in Sources */,
+				E71EDB4022F1EAED00AF5441 /* AddTimelineController.swift in Sources */,
+				E7FBB81522EE3D700029ABE4 /* TimelineViewModel.swift in Sources */,
+				E7FBB84022F084AA0029ABE4 /* CollectionTimeLineProtocol.swift in Sources */,
+				E7FBB84B22F08C330029ABE4 /* StartController.swift in Sources */,
+				E7FBB84722F089630029ABE4 /* BaseProtocols.swift in Sources */,
+				E71EDB3C22F1EA7200AF5441 /* AddTimeLineUseCase.swift in Sources */,
+				E7FBB84222F084C10029ABE4 /* CollectionTimeLineUseCase.swift in Sources */,
+				E71EDB3E22F1EA8B00AF5441 /* AddTimeLineNavigator.swift in Sources */,
 				E7FBB7FE22EDB9E10029ABE4 /* TimeLineSample.xcdatamodeld in Sources */,
+				E7FBB81322EDBD390029ABE4 /* CollectionTimeLineController.swift in Sources */,
+				E7FBB83B22F084690029ABE4 /* CollectionTimeLineViewModel.swift in Sources */,
+				E7FBB83D22F0847A0029ABE4 /* CollectionTimeLineNavigator.swift in Sources */,
+				E7FBB84E22F095430029ABE4 /* AddTimelineProtocol.swift in Sources */,
+				E7FBB81A22EE46810029ABE4 /* ContentService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7FBB82222EF03B20029ABE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7FBB82922EF03B20029ABE4 /* TimeLineSampleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E7FBB82C22EF03B20029ABE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7FBB7F122EDB9E10029ABE4 /* TimeLineSample */;
+			targetProxy = E7FBB82B22EF03B20029ABE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E7FBB7F922EDB9E10029ABE4 /* Main.storyboard */ = {
@@ -284,6 +585,7 @@
 		};
 		E7FBB80822EDB9E50029ABE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 985A4A10C9F639C90D98ADB5 /* Pods-TimeLineSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +604,7 @@
 		};
 		E7FBB80922EDB9E50029ABE4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6826667A8073BD111EB322A8 /* Pods-TimeLineSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -315,6 +618,44 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E7FBB82E22EF03B20029ABE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P72Q8Q3CT;
+				INFOPLIST_FILE = TimeLineSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ChatKit.TimeLineSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TimeLineSample;
+			};
+			name = Debug;
+		};
+		E7FBB82F22EF03B20029ABE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9P72Q8Q3CT;
+				INFOPLIST_FILE = TimeLineSampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ChatKit.TimeLineSampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TimeLineSample;
 			};
 			name = Release;
 		};
@@ -335,6 +676,15 @@
 			buildConfigurations = (
 				E7FBB80822EDB9E50029ABE4 /* Debug */,
 				E7FBB80922EDB9E50029ABE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7FBB82D22EF03B20029ABE4 /* Build configuration list for PBXNativeTarget "TimeLineSampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7FBB82E22EF03B20029ABE4 /* Debug */,
+				E7FBB82F22EF03B20029ABE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
